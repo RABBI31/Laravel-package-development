@@ -7,8 +7,10 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
+        "inertiajs/inertia-laravel": "^2.0",
         "laravel/framework": "^12.0",
-        "laravel/tinker": "^2.10.1"
+        "laravel/tinker": "^2.10.1",
+        "myvendor/helloworld": "dev-master"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
@@ -31,6 +33,14 @@
             "Tests\\": "tests/"
         }
     },
+    "repositories": [
+    {
+        "type": "path",
+        "url": "packages/myvendor/helloworld",
+        "symlink": true
+    }
+]
+,
     "scripts": {
         "post-autoload-dump": [
             "@php artisan config:clear",

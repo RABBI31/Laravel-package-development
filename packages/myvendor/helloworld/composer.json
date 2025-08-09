@@ -1,0 +1,19 @@
+{
+    "name": "myvendor/helloworld",
+    "description": "A simple Laravel Hello World package",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "MyVendor\\HelloWorld\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MyVendor\\HelloWorld\\HelloWorldServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
